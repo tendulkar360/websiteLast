@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(241, 215, 65);
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+}
+
+.carousel {
+    width: 98%;
+    margin: auto;
+}
+
+#services-page , #about-page , #order-page {
+    height: 100vh;
+}
+
+#services-page , #about-page , #order-page , #contact-page {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+#services-page p , #about-page p , #order-page p {
+    padding-top: 40px;
+}
+
+#contact-page {
+    background-color: rgb(41, 38, 38);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    height: 81vh;
+}
+.contact-container {
+    display: flex;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 30px;
+}
+
+input[type="text"] , textarea {
+    padding: 3px 0 3px 8px;
+    outline: none;
+    border-radius: 6px;
+}
+
+.btn {
+    color: green;
+    background: none;
+    border: 2px solid;
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.btn:hover {
+    background: #fff;
+}
+
+.btn:active {
+    background-color: rgb(67, 67, 253);
+}
+
+#contact-page h5 {
+    text-align: left;
+}
+
+footer {
+    background-color: black;
+    color: grey;
+    line-height: 40px;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover {
+    color: purple;
+    transition: 0.5s linear;
+
+}
+
+.social-icons img {
+    width: 60px;
+    margin-top: 20px;
+}
+
+.social-icons .instagram {
+    width: 40px;
+}
+
+.social-icons {
+    margin-left: 500px;
+    margin-top: 90px;
+}
+
+@media only screen and (max-width: 1330px){
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel img {
+        height: 79vh;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    h5 {
+        margin-top: 5px;
+    }
+
+    .form {
+        width: 82%;
+        margin-top: 20px;
+    }
+
+    #contact-page {
+        height: 100%;
+        background-color: rgb(41, 38, 38);
+    }
+
+    footer {
+        margin-bottom: 0;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    #services-page , #about-page , #order-page , #contact-page {
+        overflow: hidden;
+    }
+
+    #order-page {
+        padding-bottom: 20px;
+    }
+
+    .social-icons {
+        margin: auto;
+        padding-bottom: 100px;
+    }
+}
